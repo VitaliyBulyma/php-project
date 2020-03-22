@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/adminDashboard.css">
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <main class="main">
+    <h1>Admin Dashboard</h1>
+    <aside class="right">
+      <h2>Survey stats at Glance</h2>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          New Surveys Created
+          <span class="badge badge-primary badge-pill">12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Flagged Surveys
+          <span class="badge badge-primary badge-pill">0</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Surveys pending approval
+          <span class="badge badge-primary badge-pill">18</span>
+        </li>
+      </ul>
+    </aside>
+    <aside class="left">
+      <h2>User Stats at Glance</h2>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          New Users Registered
+          <span class="badge badge-primary badge-pill">140</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Reported Users
+          <span class="badge badge-primary badge-pill">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Deleted Accounts
+          <span class="badge badge-primary badge-pill">0</span>
+        </li>
+      </ul>
+    </aside>
+    <div class="survey">
+      <h3>Surveys</h3>
+      <div class="inline-block">
+  
+        <select class="custom-select">
+          <option selected="">Select Status</option>
+          <option value="1">All</option>
+          <option value="2">Approved</option>
+          <option value="3">Pending</option>
+        </select>
+  
+      </div>
+  
+  
+      <hr />
+  
+      <table class="table table-hover">
+  
+        <thead>
+          <tr>
+            <th scope="col">Survey ID</th>
+            <th scope="col">Survey Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Created</th>
+            <th scope="col">Author</th>
+            <th scope="col">Status</th>
+            <th colspan="2" scope="col" style="text-align:center;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+  
+          <tr class="table-primary">
+            <th scope="row"><a href="#">1</a></th>
+            <td> Costco shopping</td>
+            <td>Survey about Costco shopping satisfaction</td>
+            <td>April 1, 1996</td>
+            <td><a href="#">Bill Wiles</a></td>
+            <td>Approved</td>
+            <td><a href="#" role="button">Approve</a></td>
+            <td><a href="#" role="button">Delete</a></td>
+  
+  
+  
+          </tr>
+          <tr class="table-primary">
+            <th scope="row"><a href="#">2</a></th>
+            <td> Web Development at Humber College</td>
+            <td>Alumni satisfaction survey for Web Development program at humber college</td>
+            <td>April 1, 2019</td>
+            <td><a href="#">Jessica White</a></td>
+            <td><i>Pending</i></td>
+            <td><a href="#" role="button">Approve</a></td>
+            <td><a href="#" role="button">Delete</a></td>
+  
+          </tr>
+        </tbody>
+      </table>
+    </div >
+
+    <div class="users">
+      <h3>Users</h3>
+      <div class="inline-block">
+  
+        <select class="custom-select">
+          <option selected="">Select Status</option>
+          <option value="1">All</option>
+          <option value="2">Active</option>
+          <option value="3">Suspended</option>
+        </select>
+  
+      </div>
+      <hr />
+  
+      <table class="table table-hover">
+  
+        <thead>
+          <tr>
+            <th scope="col">User ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name </th>
+            <th scope="col">Date Registered</th>
+            <th scope="col">Country</th>
+            <th scope="col">Status</th>
+            <th colspan="2" scope="col" style="text-align:center;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+  
+          <tr class="table-primary">
+            <th scope="row"><a href="#">1</a></th>
+            <td>Bill</td>
+            <td>Whiles</td>
+            <td>April 1, 1996</td>
+            <td>Portugal</td>
+            <td><i>Suspended</i></td>
+            <td><a href="#" role="button">Suspend</a></td>
+            <td><a href="#" role="button">Delete</a></td>
+  
+          </tr>
+          <tr class="table-primary">
+            <th scope="row"><a href="#">2</a></th>
+            <td>Jessica</td>
+            <td>White</td>
+            <td>April 1, 1996</td>
+            <td>United Kingdom</td>
+            <td>Active</td>
+            <td><a href="#" role="button">Suspend</a></td>
+            <td><a href="#" role="button">Delete</a></td>
+  
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+  </main>
+</body>
+
+</html>
